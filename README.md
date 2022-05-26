@@ -37,6 +37,8 @@
    > 01.用户管理使用的是Django的用户管理功能
    >
    > 02.默认管理员账号信息 admin/123456
+   >
+   > 03.管理员登录地址: http://127.0.0.1/admin/
 
 8. 404页面
 
@@ -48,10 +50,21 @@
 
 1. 选择数据库
 
-   `注意`：默认使用文件数据库可以不做修改
-
    ```
+   ## 01.使用文件数据库
+   # 默认即使用文件数据库可以不做修改
+   ## 02.使用MySQL数据库
    vim settings.py
+   DATABASES = {
+       'default': {
+           'ENGINE': 'django.db.backends.mysql',
+           'NAME': 'menu',
+           'USER': 'root',
+           'PASSWORD': 'Devops123456.',
+           'HOST': '192.168.75.130',
+           'PORT': '3306',
+       }
+   }
    ```
 
    
@@ -77,7 +90,10 @@
 
 ```
 ## 01.使用docker启动Django后台
-docker run --name menu --restart=always -d -p 8000:8000 -v /home/settings.py:/home/menu/menu/settings.py menu:v1
+# 演示不需要映射配置文件和文件数据库
+docker run --name menu --restart=always -d -p 8000:8000 menu:v1
+# 为了修改配置文件和保存数据,需要映射
+docker run --name menu --restart=always -d -p 8000:8000 -v /home/db.sqlite3:/home/menu/db.sqlite3 -v /home/settings.py:/home/menu/menu/settings.py menu:v1
 ## 02.使用nginx代理,并处理静态文件
 vim nginx.conf
 	proxy_pass http://127.0.0.1:8000;	//按实际修改docker的代理地址
@@ -91,4 +107,11 @@ vim nginx.conf
 ```
 
 
+
+# 联系作者：zhujiang6688@qq.com
+
+| <img src="C:\Users\heiying\Desktop\APP\github\menu\media\wxpay.jpg" alt="wxpay" style="zoom: 33%;" /> | <img src="C:\Users\heiying\Desktop\APP\github\menu\media\zfbpay.jpg" alt="zfbpay" style="zoom:25%;" /> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+# 赞助一下
 
