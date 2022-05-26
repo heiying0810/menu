@@ -14,23 +14,23 @@
 
 2. 自定义修改具体每个业务版块的不同环境
 
-   ![image-20220526164651697](C:\Users\heiying\AppData\Roaming\Typora\typora-user-images\image-20220526164651697.png)
+   ![image-20220526164651697](https://github.com/heiying0810/menu/blob/main/media/image-20220526164651697.png)
 
 3. 支持按具体某个业务版块的某个环境检索
 
-   ![image-20220526165202711](C:\Users\heiying\AppData\Roaming\Typora\typora-user-images\image-20220526165202711.png)
+   ![image-20220526165202711](https://github.com/heiying0810/menu/blob/main/media/image-20220526165202711.png)
 
 4. 支持通过搜索框检索(需要APP名称中有检索内容)
 
-   ![image-20220526165256826](C:\Users\heiying\AppData\Roaming\Typora\typora-user-images\image-20220526165256826.png)
+   ![image-20220526165256826](https://github.com/heiying0810/menu/blob/main/media/image-20220526165256826.png)
 
 5. 支持后台管理导航列表内容
 
-   ![image-20220526165443991](C:\Users\heiying\AppData\Roaming\Typora\typora-user-images\image-20220526165443991.png)
+   ![image-20220526165443991](https://github.com/heiying0810/menu/blob/main/media/image-20220526165443991.png)
 
 6. 新增导航内容
 
-   ![image-20220526165658609](C:\Users\heiying\AppData\Roaming\Typora\typora-user-images\image-20220526165658609.png)
+   ![image-20220526165658609](https://github.com/heiying0810/menu/blob/main/media/image-20220526165658609.png)
 
 7. 支持用户管理
 
@@ -40,7 +40,7 @@
 
 8. 404页面
 
-   ![image-20220526170839563](C:\Users\heiying\AppData\Roaming\Typora\typora-user-images\image-20220526170839563.png)
+   ![image-20220526170839563](https://github.com/heiying0810/menu/blob/main/media/image-20220526170839563.png)
 
 # 二、部署
 
