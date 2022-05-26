@@ -110,7 +110,7 @@ vim nginx.conf
 
 # 联系作者：zhujiang6688@qq.com
 
-| <img src="C:\Users\heiying\Desktop\APP\github\menu\media\wxpay.jpg" alt="wxpay" style="zoom: 33%;" /> | <img src="C:\Users\heiying\Desktop\APP\github\menu\media\zfbpay.jpg" alt="zfbpay" style="zoom:25%;" /> |
+| <img src="https://github.com/heiying0810/menu/blob/main/media/wxpay.jpg" alt="wxpay" style="zoom: 33%;" /> | <img src="https://github.com/heiying0810/menu/blob/main/media/zfbpay.jpg" alt="zfbpay" style="zoom:25%;" /> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 # 赞助一下
