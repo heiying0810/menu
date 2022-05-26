@@ -4,7 +4,7 @@
 
 > 使用Django开发,可以使用后台管理具体导航内容。数据库支持MySQL和文件数据库，部署方式适配了docker和k8s。
 
-![image-20220526165029791](C:\Users\heiying\AppData\Roaming\Typora\typora-user-images\image-20220526165029791.png)
+![image-20220526165029791](https://github.com/heiying0810/menu/blob/main/media/image-20220526165029791.png)
 
 # 一、功能说明
 
