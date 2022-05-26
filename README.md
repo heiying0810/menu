@@ -110,7 +110,7 @@ vim nginx.conf
 
 # 联系作者：zhujiang6688@qq.com
 
-![image-20220526170839563](https://github.com/heiying0810/menu/blob/main/media/image-20220526170839563.png)
+![image-20220526170839563](https://github.com/heiying0810/menu/blob/main/media/pay.png)
 
 # 赞助一下
 
