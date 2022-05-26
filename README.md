@@ -10,7 +10,7 @@
 
 1. 自定义修改业务版块
 
-   ![image-20220526164623693](C:\Users\heiying\AppData\Roaming\Typora\typora-user-images\image-20220526164623693.png)
+   ![image-20220526164623693](https://github.com/heiying0810/menu/blob/main/media/image-20220526164623693.png)
 
 2. 自定义修改具体每个业务版块的不同环境
 
