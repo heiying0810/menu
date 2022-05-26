@@ -110,8 +110,7 @@ vim nginx.conf
 
 # 联系作者：zhujiang6688@qq.com
 
-| <img src="https://github.com/heiying0810/menu/blob/main/media/wxpay.jpg" alt="wxpay" style="zoom: 33%;" /> | <img src="https://github.com/heiying0810/menu/blob/main/media/zfbpay.jpg" alt="zfbpay" style="zoom:25%;" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+![image-20220526170839563](https://github.com/heiying0810/menu/blob/main/media/image-20220526170839563.png)
 
 # 赞助一下
 
