@@ -46,6 +46,8 @@
 
 # 二、部署
 
+## `注意`:/home/menu/media 目录需要挂载到外部,要不重启pod会丢失上传的图片
+
 ## 2.1、修改配置文件
 
 1. 选择数据库
@@ -84,16 +86,27 @@
    ]
    ```
 
+3. 修改授权码
+
+   > 默认镜像授权码有效期到当月月底，永久授权50元,一年授权20元。
+
+   ```
+   vim settings.py
+   AUTHOR_KEY = "MTc2MDE5NzA2NjUyMDU0NDg1"
+   ```
+
    
 
 ## 2.1、使用docker部署
 
+`镜像说明`:默认每个镜像的有效期到当月月底,比如"menu:20220631","menu:20220731","menu:20220831"
+
 ```
 ## 01.使用docker启动Django后台
 # 演示不需要映射配置文件和文件数据库
-docker run --name menu --restart=always -d -p 8000:8000 menu:v1
+docker run --name menu --restart=always -d -p 8000:8000 839412644zj/menu:20220631
 # 为了修改配置文件和保存数据,需要映射
-docker run --name menu --restart=always -d -p 8000:8000 -v /home/db.sqlite3:/home/menu/db.sqlite3 -v /home/settings.py:/home/menu/menu/settings.py menu:v1
+docker run --name menu --restart=always -d -p 8000:8000 -v /home/db.sqlite3:/home/menu/db.sqlite3 -v /home/settings.py:/home/menu/menu/settings.py 839412644zj/menu:20220631
 ## 02.使用nginx代理,并处理静态文件
 vim nginx.conf
 	proxy_pass http://127.0.0.1:8000;	//按实际修改docker的代理地址
@@ -103,7 +116,8 @@ vim nginx.conf
 ## 2.2、使用K8S部署
 
 ```
-## 
+kubectl apply -f k8s_menu.yaml
+## 使用主机的8000端口访问
 ```
 
 

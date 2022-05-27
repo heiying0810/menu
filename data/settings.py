@@ -50,26 +50,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'menu.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'menu',
-        'USER': 'root',
-        'PASSWORD': 'Devops123456.',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'menu',
+    #     'USER': 'menu_rw',
+    #     'PASSWORD': '8KzKTYzt7sJDAGcX27KFpkJ',
+    #     'HOST': 'rm-2ze1k37224f7ub84z.mysql.rds.aliyuncs.com',
+    #     'PORT': '3306',
+    # }
 }
-
-# Password validation
-# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -86,9 +80,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Internationalization
-# https://docs.djangoproject.com/en/4.0/topics/i18n/
-
 LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
@@ -96,9 +87,6 @@ TIME_ZONE = 'Asia/Shanghai'
 USE_I18N = True
 
 USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
 # STATIC_ROOT = 'static/'
@@ -118,3 +106,4 @@ COMPANY_ENV = [
     ("fat", "FAT测试环境"),
     ("uat", "UAT演示环境"),
 ]
+AUTHOR_KEY = "MTc2MDE5NzA2NjUyMDU0NDg1"
